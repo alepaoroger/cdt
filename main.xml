@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="teiCorpus.xsl"?>
+<!DOCTYPE TEI SYSTEM "myTEI.dtd">
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+    <fileDesc> <!-- unico elemento obbligatorio in tutti gli header TEI -->
+        <!-- tre elementi obbligatori per fileDesc (titleStmt, publicationStmt, sourceDesc) -->
+        <titleStmt>
+            <title>Cartoline dal Museo Civico Etnografico "Giovanni Podenzana" - Edizione Digitale</title>
+            <respStmt>
+                <resp>transcription by</resp>
+                <name xml:id="AP">Alessandra Paone</name>
+            </respStmt>
+            <respStmt>
+                <resp>Ente di Appartenenza</resp>
+                <name type="comune" xml:id="SP">Comune della Spezia</name>
+            </respStmt>
+        </titleStmt>
+        <editionStmt>
+            <edition>Progetto di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+            <date>2018</date><!-- COMPILAZIONE, NOME COMPILATORE, REFERENTE SCIENTIFICO, FUNZIONARIO RESPONSABILE come da TabCartoline -->
+            </edition>
+            <respStmt>
+                <resp>Compilatore</resp>
+                <name xml:id="TC">Tommaso Castagneto</name>
+            </respStmt>
+            <respStmt>
+                <resp>Referente Scientifico</resp>
+                <name xml:id="GP">Giacomo Paolicchi</name>
+                <name xml:id="ES">Enrica Salvatori</name>
+            </respStmt>
+            <respStmt>
+                <resp>Funzionario Responsabile</resp>
+                <name xml:id="ER">E. Ratti</name>
+            </respStmt>
+        </editionStmt>
+        <publicationStmt>
+            <publisher>Università di Pisa</publisher>
+            <pubPlace>Pisa</pubPlace>
+            <date when="2019">2019</date>
+        </publicationStmt>
+        <sourceDesc>
+            <p>Una descrizione più dettagliata delle fonti dei documenti è disponibile nell'elemento sourceDesc per ciascuna cartolina.</p>
+        </sourceDesc>
+    </fileDesc>
+ </teiHeader>
+ <TEI xml:id="cartolina1">
+  <teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title>Cartoline dal Museo Civico Etnografico "Giovanni Podenzana" - Edizione Digitale</title>
+            <respStmt>
+                <resp>transcription by</resp>
+                <name ref="#AP">Alessandra Paone</name>
+            </respStmt>
+            <respStmt>
+                <resp>Ente di Appartenenza</resp>
+                <name type="comune" ref="#SP">Comune della Spezia</name>
+            </respStmt>
+        </titleStmt>
+        <editionStmt>
+            <edition>Progetto di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+            <date>2018</date><!-- COMPILAZIONE, NOME COMPILATORE, REFERENTE SCIENTIFICO, FUNZIONARIO RESPONSABILE come da TabCartoline -->
+            </edition>
+            <respStmt>
+                <resp>Compilatore</resp>
+                <name ref="#TC">Tommaso Castagneto</name>
+            </respStmt>
+            <respStmt>
+                <resp>Referente Scientifico</resp>
+                <name ref="#GP">Giacomo Paolicchi</name>
+                <name ref="#ES">Enrica Salvatori</name>
+            </respStmt>
+            <respStmt>
+                <resp>Funzionario Responsabile</resp>
+                <name ref="#ER">E. Ratti</name>
+            </respStmt>
+        </editionStmt>
+        <publicationStmt>
+            <publisher>Università di Pisa</publisher>
+            <pubPlace>Pisa</pubPlace>
+            <date when="2019">2019</date>
+        </publicationStmt>
+        <notesStmt>
+            <note>Sul retro riporta la stampa “Copyright by A. Noyer 1912 – Allegorie n 198”</note>
+        </notesStmt>
+        <sourceDesc>
+            <bibl>
+                <title>Les Sirènes</title>
+                <author xml:id="DM">Domenico Mastroianni</author>
+                <date>1913</date>
+           </bibl>
+           <msDesc>
+                <msIdentifier>
+                    <country>Italia</country>
+                    <settlement>La Spezia (SP)</settlement>
+                    <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                    <idno>7694_061_001/002</idno>
+                </msIdentifier>
+                <msContents>
+                    <summary>Cartolina Artistica</summary>
+                    <textLang>Italiano</textLang>
+                </msContents>
+                <physDesc>
+                    <objectDesc>
+                        <supportDesc>
+                            <support>
+                                <objectType>Cartolina</objectType>
+                                <material>Carta</material>
+                                <dimensions unit="cm">
+                                    <height>9</height>
+                                    <width>14</width>
+                                </dimensions>
+                                <stamp>Timbro postale</stamp>
+                                <stamp>Timbro postale ondulato</stamp>
+                                <stamp>Francobollo</stamp>
+                            </support>
+                            <condition>Buono</condition>
+                        </supportDesc>
+                    </objectDesc>
+                </physDesc>
+           </msDesc>
+           <listPerson>
+                <person>
+                    <persName xml:id="OT">
+                        <addName type="epithet" full="abb">Gentil</addName> <!-- elementi ed attributi aggiunti come da capitolo 13.2.1 Personal Names delle guidelines -->
+                        <roleName type="honorific">Signorina</roleName> 
+                        <forename>Oliva</forename>
+                        <surname>Turtura</surname>
+                    </persName>
+                </person>
+                <person>
+                    <persName xml:id="AN">
+                        <forename full="abb">A.</forename>
+                        <surname>Noyer</surname>
+                    </persName>
+                </person>
+                <person>
+                    <persName ref="#DM"/> <!-- uso ref perché ho già dichiarato l'id univoco per il Mastroianni-->
+                </person>
+                <person>
+                    <persName>
+                        <roleName type="honorific" full="abb">Sig.</roleName>
+                        <surname>Cibecchini</surname>
+                    </persName>
+                </person>
+           </listPerson>
+           <listPlace>
+                <place xml:id="NO">
+                    <placeName>Arona</placeName>
+                    <location>
+                        <geogName>Lago Maggiore</geogName>
+                        <district type="comune">Arona</district>
+                        <address>
+                            <addrLine>Via Cavour 12</addrLine>
+                        </address>
+                    </location>
+                </place>
+                <place xml:id="MI">
+                    <placeName>Milano</placeName>
+                    <district type="città">Milano</district>
+                </place>
+           </listPlace>
+        </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+        <correspDesc>
+            <correspAction type="sent">
+                <placeName ref="#MI"/>
+                <date type="postage" when="1913-4-18">18-19 4 1913</date>
+            </correspAction>
+            <correspAction type="received">
+                <persName ref="#OT"/>
+                <placeName ref="NO"/>
+                <date>unknown</date>
+            </correspAction>
+            <correspContext>
+                <p>Cartolina di saluti ad Oliva Turtura</p>
+            </correspContext>
+        </correspDesc>
+        <langUsage>
+            <language ident="it-IT">Italiano</language>
+        </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text type="cartolina" xml:id="c1">
+    <body>
+        <div type="fronte">
+            <figure>
+                <graphic url="7694-061F.jpg"/>
+                <head>Les Sirènes - Domenico Mastroianni</head>
+                <figDesc>Uomo su uno scoglio e sirene in acqua</figDesc>
+            </figure>
+        </div>
+        <div type="retro">
+            <div type="message">
+                <p>Saluti cordiali</p>
+                <signed><unclear reason="illegible"></unclear></signed>
+            </div>
+            <div type="destination">
+                <p>
+                    <stamp type="postmark">
+                        <mentioned>2 MILANO 2 PARTENZA 18-19 4 VIII 1913</mentioned>
+                    </stamp>
+                    <stamp type="postmark">timbro ondulato</stamp>
+                    <stamp type="postage">
+                        <mentioned>POSTE ITALIANE 5 CENTESIMI 5</mentioned>
+                    </stamp>
+                </p>
+                <p>
+                    <address>
+                        <addrLine>Gentil Signorina</addrLine>
+                        <addrLine>Oliva Turtura</addrLine>
+                        <addrLine>presso Sig. Cibecchini</addrLine>
+                        <addrLine>Via Cavour 12</addrLine>
+                        <addrLine><placeName ref="#NO">Lago Maggiore Arona</placeName></addrLine>
+                    </address>
+                </p>
+            </div>
+        </div>
+    </body>
+  </text>
+  <facsimile>
+    <surface xml:id="front1" type="ff">
+        <graphic url="7694-061F.jpg"/>
+    </surface>
+    <surface xml:id="back1" type="rr">
+        <graphic url="7694-061R.jpg"/>
+    </surface>
+  </facsimile>
+ </TEI>
+ <TEI xml:id="cartolina2">
+  <teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title>Cartoline dal Museo Civico Etnografico "Giovanni Podenzana" - Edizione Digitale</title>
+            <respStmt>
+                <resp>transcription by</resp>
+                <name ref="#AP">Alessandra Paone</name>
+            </respStmt>
+            <respStmt>
+                <resp>Ente di Appartenenza</resp>
+                <name type="comune" ref="#SP">Comune della Spezia</name>
+            </respStmt>
+        </titleStmt>
+        <editionStmt>
+            <edition>Progetto di Codifica di Testi, Corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+            <date>2018</date><!-- COMPILAZIONE, NOME COMPILATORE, REFERENTE SCIENTIFICO, FUNZIONARIO RESPONSABILE come da TabCartoline -->
+            </edition>
+            <respStmt>
+                <resp>Compilatore</resp>
+                <name ref="#TC">Tommaso Castagneto</name>
+            </respStmt>
+            <respStmt>
+                <resp>Referente Scientifico</resp>
+                <name ref="#GP">Giacomo Paolicchi</name>
+                <name ref="#ES">Enrica Salvatori</name>
+            </respStmt>
+            <respStmt>
+                <resp>Funzionario Responsabile</resp>
+                <name ref="#ER">E. Ratti</name>
+            </respStmt>
+        </editionStmt>
+        <publicationStmt>
+            <publisher>Università di Pisa</publisher>
+            <pubPlace>Pisa</pubPlace>
+            <date when="2019">2019</date>
+        </publicationStmt>
+        <notesStmt>
+            <note>Sul fronte troviamo il nome dell'artista "Mastroianni", sul retro troviamo la stampa "Vistarini Matroianni - Editori - Roma Allegoria N 183" e il titolo dell'opera in fronte</note>
+        </notesStmt>
+        <sourceDesc>
+            <bibl>
+                <title>La nascita del sole</title>
+                <author ref="#DM">Domenico Mastroianni</author>
+                <publisher>Cromogliptica A. Marzi</publisher>
+                <pubPlace>Roma</pubPlace>
+                <date>1917</date>
+           </bibl>
+           <msDesc>
+                <msIdentifier>
+                    <country>Italia</country>
+                    <settlement>La Spezia (SP)</settlement>
+                    <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                    <idno>7694_191_001/002</idno>
+                </msIdentifier>
+                <msContents>
+                    <summary>Cartolina Artistica</summary>
+                    <textLang>Italiano</textLang>
+                </msContents>
+                <physDesc>
+                    <objectDesc>
+                        <supportDesc>
+                            <support>
+                                <objectType>Cartolina</objectType>
+                                <material>Carta</material>
+                                <dimensions unit="cm">
+                                    <height>9</height>
+                                    <width>14</width>
+                                </dimensions>
+                                <stamp>Visto Censura Roma</stamp>
+                            </support>
+                            <condition>Buono</condition>
+                        </supportDesc>
+                    </objectDesc>
+                </physDesc>
+           </msDesc>
+           <listPerson>
+                <person>
+                    <persName xml:id="G">
+                        <forename full="abb">Giovannino</forename>
+                    </persName>
+                </person>
+                <person>
+                    <persName ref="#OT"/>
+                </person>
+                <person>
+                    <persName xml:id="AM">
+                        <forename full="abb">A.</forename>
+                        <surname>Marzi</surname>
+                    </persName>
+                </person>
+                <person>
+                    <persName ref="#DM"/>
+                </person>
+           </listPerson>
+           <listPlace>
+                <place xml:id="MO">
+                    <placeName>Modena</placeName>
+                    <district type="città">Modena</district>
+                </place>
+                <place xml:id="RO">
+                    <placeName>Roma</placeName>
+                    <district type="città">Roma</district>
+                </place>
+           </listPlace>
+        </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+        <correspDesc>
+            <correspAction type="sent">
+                <placeName ref="#MO"/>
+                <date type="postage" when="1917-12-28">28/12-1917</date>
+            </correspAction>
+            <correspAction type="received">
+                <persName ref="#OT"/>
+            </correspAction>
+            <correspContext>
+                <p>Cartolina d'amore ad Oliva da Giovannino</p>
+            </correspContext>
+        </correspDesc>
+        <langUsage>
+            <language ident="it-IT">Italiano</language>
+        </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text type="cartolina" xml:id="c2">
+    <body>
+        <div type="fronte">
+            <figure>
+                <graphic url="7694-191F.jpg"/>
+                <head>La nascita del sole - Domenico Mastroianni</head>
+                <figDesc>Una divinità a  cavallo (helios probabilmente) guida il carro trainato da cavalli per far sorgere il sole</figDesc>
+            </figure>
+        </div>
+        <div type="retro">
+            <div type="message">
+                <p>Modena, li 28/12-1917</p>
+                <p>Oliva mia, t'amo con tutta la <unclear>passione</unclear> dell'animo mio d'un amore <unclear>purissimo adorato</unclear> come i petali di un candido fiore.</p>
+                <p>T'amo forte forte come palpita il mio cuore per la vita e l'eternità.</p>
+                <p>Un bacio <unclear>grandissimo</unclear></p>
+                <signed>tuo Giovannino</signed>
+            </div>
+        </div>
+    </body>
+  </text>
+  <facsimile>
+    <surface xml:id="front2" type="ff">
+        <graphic url="7694-191F.jpg"/>
+    </surface>
+    <surface xml:id="back2" type="rr">
+        <graphic url="7694-191R.jpg"/>
+    </surface>
+  </facsimile>
+ </TEI>
+</teiCorpus>

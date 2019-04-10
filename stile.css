@@ -1,0 +1,197 @@
+h1 {
+    color: 	rgba(0, 0, 0, 0.87);
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    text-align:center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+#img1 , #img2 {
+      cursor: pointer;  
+      margin-left: 1%;
+      margin-top:0%;
+      opacity: 1;
+}
+
+#blocchi{
+    display:flex;
+    position: relative;
+}
+
+.overlay {
+  width:70%;
+  height:100%;
+  position: relative;
+  transition: width .3s ease;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 85%;
+    
+}
+
+#section_1{
+  width: 100%;
+  height: 100%;
+}
+
+.intro{
+    text-align:center;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:3%;
+    font-family: Roboto, sans-serif;
+}
+
+#imgfronte_1   {
+  width: 75%;
+  height: 50%;
+  display: none;
+  margin-left:15%;
+  margin-top:20%;
+}
+
+#imgfronte_2{
+   width: 75%;
+  height: 50%;
+  display: none;
+  margin-left:15%;
+  margin-top:20%;
+ }
+ 
+ 
+#imgretro_1 {
+ margin-left:5%;
+ display: none;
+}
+
+#imgretro_2 {
+  display: none;
+  margin-left:5%;
+  padding-top:13%;
+}
+
+#section_2 {
+  display:none;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+#container {
+  border:  3px #778899;
+  width: 95%;
+  padding:0;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10%;
+  background-color: white;
+}
+
+
+#container_cartolina {
+    
+  width: 66%;
+  height:90%;
+  display: inline-block;
+  margin-top: -46%;
+}
+
+#container_testo {  
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 2%;
+  margin-top: 40%;
+  margin-bottom: -6%;
+  background-color: white;
+}
+
+#cartolina_1, #cartolina_2 {
+ display: none;
+ border-left:2px solid #5f9ea0;
+ margin-top:4%;
+ padding-bottom:3%;
+ width:100%;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+}
+
+#t1, #t2 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+}
+
+h3 {
+  color: 	rgba(0, 0, 0, 0.87);
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  text-align:left;
+  font-family: Roboto, sans-serif;
+}
+
+#notes {
+    text-align: left;  
+    border-top-style: groove;
+    border-bottom-style: groove;
+}
+
+#section_3 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+  text-align:left;
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+}
+
+#about {
+    text-align: center;
+    width: 100%;
+}
+
+#R1 {
+  width: 75%;
+  height: 55%; 
+  padding-top: 14%;
+  margin-left: -29%;
+  display:inline-block;
+  }
+
+#R2 {
+    width: 75%;
+    height: 55%; 
+    padding-top: 15%;
+    margin-left: -29%;
+    display:inline-block;
+  }
+
+#cartolinaheader_1 {
+    margin-top: -50%;
+    margin-left: 50%;
+  }
+
+#cartolinaheader_2 {
+    margin-top: -50%;
+    margin-left: 50%;
+  }
+
+#primaFoto {
+      border-right-style: groove;
+  }
